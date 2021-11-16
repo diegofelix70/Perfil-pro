@@ -496,9 +496,17 @@ p{
     color: var(--black);
 }*/
 @media(max-width: 750px){
-    .main .topbar .toggle.active{
-        height: 150px;
+    .navigation{
+        left: -100%;
     }
+    .navigation.active{
+        left: 0;
+        width: 100%;
+    }
+    .main.active{
+        left: -100%;
+    }
+    
     .services .content{
         grid-template-columns: repeat(1,1fr);
     }
